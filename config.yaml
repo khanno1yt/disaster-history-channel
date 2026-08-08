@@ -1,0 +1,48 @@
+channel:
+  name: "Collapse Files"          # rename to whatever you want the channel to be called
+  niche: "aviation, industrial, and engineering disaster history"
+  uploads_per_day: 2
+  video_length_target_minutes: 8
+  content_guardrails: >
+    Factual, investigative, documentary tone. Focus on causes, timeline, and
+    engineering/procedural lessons learned. Never use real graphic photos of
+    victims or wreckage with visible bodies. Prefer diagrams, AI-generated
+    illustrative scenes, and archival-style stills of equipment/locations only.
+    Avoid events within the last 5 years unless coverage is already extensive
+    and the causes are settled (e.g. NTSB/official report published).
+
+script:
+  # Free-tier Gemini model. Google reshuffles which models are free every
+  # few months — check aistudio.google.com/apikey for the current list if
+  # this one ever stops working, and swap the name here.
+  model: "gemini-2.5-flash"
+  # Rotated across videos so the channel doesn't look templated to reviewers.
+  structures:
+    - cold_open_moment        # open mid-incident, then rewind to explain how it happened
+    - timeline_countdown      # T-minus style countdown to the failure point
+    - investigator_perspective # framed as reading the official investigation report
+    - myth_vs_fact            # opens by debunking a common misconception about the event
+  min_words: 1100
+  max_words: 1600
+
+voice:
+  provider: "edge-tts"        # free, no API key. Swap to elevenlabs for higher quality.
+  voice_name: "en-US-GuyNeural"
+  rate: "+0%"
+
+visuals:
+  provider: "pollinations"    # free, no API key — see scripts/generate_visuals.py
+  style: "muted documentary illustration, cinematic lighting, no gore, no visible casualties"
+  images_per_video: 14
+
+captions:
+  whisper_model: "base"       # base is fast enough for CI; use "small" for better accuracy
+
+youtube:
+  category_id: "27"           # Education
+  privacy_status: "public"
+  default_tags:
+    - "disaster history"
+    - "engineering failure"
+    - "aviation history"
+    - "industrial accident"
