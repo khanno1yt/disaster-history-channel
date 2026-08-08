@@ -1,0 +1,47 @@
+name: Daily Video Pipeline
+
+on:
+  schedule:
+    # Runs at 13:00 UTC and 01:00 UTC — 2 uploads/day, 12 hours apart.
+    # Adjust to your audience's timezone; GitHub cron is always UTC.
+    - cron: "0 13 * * *"
+    - cron: "0 1 * * *"
+  workflow_dispatch: {}   # lets you trigger a run manually from the Actions tab
+
+jobs:
+  produce-and-upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-dejavu-core
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: python scripts/run_pipeline.py
+
+      - name: Commit updated topic queue
+        if: always()
+        run: |
+          git config user.name "pipeline-bot"
+          git config user.email "actions@github.com"
+          git add data/topics_queue.json data/last_structure.json
+          git diff --staged --quiet || git commit -m "Update topic queue [skip ci]"
+          git push
