@@ -1,6 +1,5 @@
 {
   "queue": [
-    "Tenerife Airport Disaster (1977) - two 747s collide on the runway",
     "Tacoma Narrows Bridge collapse (1940) - resonance and aeroelastic flutter",
     "Hyatt Regency walkway collapse (1981) - the design change that killed 114",
     "Hindenburg disaster (1937) - hydrogen, static electricity, and the myth of sabotage",
@@ -26,5 +25,7 @@
     "The Kaprun funicular fire (2000) - a heater malfunction and a fatal design oversight",
     "The Vajont Dam disaster (1963) - geologists who predicted the landslide and were ignored"
   ],
-  "used": []
+  "used": [
+    "Tenerife Airport Disaster (1977) - two 747s collide on the runway"
+  ]
 }
