@@ -1,6 +1,5 @@
 {
   "queue": [
-    "Piper Alpha oil rig disaster (1988) - a permit-to-work failure that killed 167",
     "Space Shuttle Challenger disaster (1986) - the O-ring warnings that were ignored",
     "Chernobyl Reactor 4 (1986) - the safety test that went wrong",
     "Aloha Airlines Flight 243 (1988) - metal fatigue and the plane that lost its roof",
@@ -26,6 +25,7 @@
     "Tenerife Airport Disaster (1977) - two 747s collide on the runway",
     "Tacoma Narrows Bridge collapse (1940) - resonance and aeroelastic flutter",
     "Hyatt Regency walkway collapse (1981) - the design change that killed 114",
-    "Hindenburg disaster (1937) - hydrogen, static electricity, and the myth of sabotage"
+    "Hindenburg disaster (1937) - hydrogen, static electricity, and the myth of sabotage",
+    "Piper Alpha oil rig disaster (1988) - a permit-to-work failure that killed 167"
   ]
 }
