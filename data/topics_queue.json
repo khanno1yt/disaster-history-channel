@@ -1,6 +1,5 @@
 {
   "queue": [
-    "Three Mile Island (1979) - the partial meltdown and what actually happened",
     "Bhopal Gas Tragedy (1984) - the chemical plant safety systems that failed",
     "Exxon Valdez oil spill (1989) - the navigation and fatigue failures behind it",
     "Union Carbide's MIC tank design flaws explained",
@@ -26,6 +25,7 @@
     "Space Shuttle Challenger disaster (1986) - the O-ring warnings that were ignored",
     "Chernobyl Reactor 4 (1986) - the safety test that went wrong",
     "Aloha Airlines Flight 243 (1988) - metal fatigue and the plane that lost its roof",
-    "Kansas City Hyatt walkway vs. the original engineer's sealed design"
+    "Kansas City Hyatt walkway vs. the original engineer's sealed design",
+    "Three Mile Island (1979) - the partial meltdown and what actually happened"
   ]
 }
