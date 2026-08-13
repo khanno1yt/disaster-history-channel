@@ -1,6 +1,6 @@
 """
 Uploads data/current_video/final.mp4 to YouTube using the title/description/
-tags from script.json.
+tags from script.json, then attaches the custom thumbnail if one exists.
 
 Requires a one-time OAuth setup (see README) to get a refresh token, stored
 as the YOUTUBE_REFRESH_TOKEN secret alongside YOUTUBE_CLIENT_ID and
@@ -65,7 +65,18 @@ def main():
         if status:
             print(f"Uploaded {int(status.progress() * 100)}%")
 
-    print(f"Upload complete: https://youtu.be/{response['id']}")
+    video_id = response["id"]
+    print(f"Upload complete: https://youtu.be/{video_id}")
+
+    thumbnail_path = VIDEO_DIR / "thumbnail.jpg"
+    if thumbnail_path.exists():
+        youtube.thumbnails().set(
+            videoId=video_id,
+            media_body=MediaFileUpload(str(thumbnail_path), mimetype="image/jpeg"),
+        ).execute()
+        print("Custom thumbnail set")
+    else:
+        print("No thumbnail.jpg found -- skipping thumbnail upload")
 
 
 if __name__ == "__main__":
