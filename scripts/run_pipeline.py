@@ -1,10 +1,10 @@
 """
 Single entrypoint that runs the whole pipeline: topics -> script -> voiceover
--> visuals -> captions -> assemble -> upload -> cleanup.
+-> visuals -> thumbnail -> captions -> assemble -> upload -> cleanup.
 
 Any stage raising an exception stops the run before upload, so a broken step
 never posts a broken video. GitHub Actions will show the run as failed and
-you'll get a notification email from GitHub — that's the only "check" this
+you'll get a notification email from GitHub -- that's the only "check" this
 system needs from you.
 """
 import shutil
@@ -21,6 +21,7 @@ import generate_topics
 import generate_script
 import generate_voiceover
 import generate_visuals
+import generate_thumbnail
 import generate_captions
 import assemble_video
 import upload_youtube
@@ -31,6 +32,7 @@ STAGES = [
     ("Writing script", generate_script.main),
     ("Generating voiceover", generate_voiceover.main),
     ("Generating visuals", generate_visuals.main),
+    ("Generating thumbnail", generate_thumbnail.main),
     ("Generating captions", generate_captions.main),
     ("Assembling video", assemble_video.main),
     ("Uploading to YouTube", upload_youtube.main),
