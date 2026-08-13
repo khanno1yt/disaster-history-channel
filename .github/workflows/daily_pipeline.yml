@@ -2,10 +2,12 @@ name: Daily Video Pipeline
 
 on:
   schedule:
-    # Runs at 13:00 UTC and 01:00 UTC — 2 uploads/day, 12 hours apart.
-    # Adjust to your audience's timezone; GitHub cron is always UTC.
-    - cron: "0 13 * * *"
-    - cron: "0 1 * * *"
+    # 17:00 UTC = ~12-1pm US Eastern / ~5-6pm UK -- overlap window that
+    # catches US lunch break and UK early evening in one slot.
+    - cron: "0 17 * * *"
+    # 20:00 UTC = ~3-4pm US Eastern / ~8-9pm UK evening -- second slot,
+    # UK prime time while still inside the US "2-4pm ET" afternoon peak.
+    - cron: "0 20 * * *"
   workflow_dispatch: {}   # lets you trigger a run manually from the Actions tab
 
 jobs:
