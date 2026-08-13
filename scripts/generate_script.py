@@ -1,9 +1,10 @@
 """
 Pulls the next topic off the queue and writes a full narration script plus a
-scene-by-scene visual breakdown (used later to generate images).
+scene-by-scene visual breakdown (used later to generate images), and now
+also a thumbnail hook line + thumbnail visual prompt.
 
 Rotates between structure styles defined in config.yaml so consecutive videos
-don't share the same opening/pacing pattern — this is the "variation" layer
+don't share the same opening/pacing pattern -- this is the "variation" layer
 YouTube's inauthentic-content reviewers look for.
 
 Uses Google's Gemini API free tier (no cost, no credit card).
@@ -32,7 +33,7 @@ def pop_next_topic():
     with open(QUEUE_PATH) as f:
         data = json.load(f)
     if not data["queue"]:
-        raise RuntimeError("Topic queue is empty — run generate_topics.py first.")
+        raise RuntimeError("Topic queue is empty -- run generate_topics.py first.")
     topic = data["queue"].pop(0)
     data["used"].append(topic)
     with open(QUEUE_PATH, "w") as f:
@@ -65,7 +66,7 @@ STRUCTURE_INSTRUCTIONS = {
     ),
     "investigator_perspective": (
         "Frame the narration as walking through the official investigation "
-        "report — what investigators found, in the order they found it — "
+        "report -- what investigators found, in the order they found it -- "
         "building to the root cause."
     ),
     "myth_vs_fact": (
@@ -83,6 +84,8 @@ SCRIPT_SCHEMA = {
         "description": {"type": "string"},
         "tags": {"type": "array", "items": {"type": "string"}},
         "narration": {"type": "string"},
+        "thumbnail_text": {"type": "string"},
+        "thumbnail_visual_prompt": {"type": "string"},
         "scenes": {
             "type": "array",
             "items": {
@@ -95,7 +98,10 @@ SCRIPT_SCHEMA = {
             },
         },
     },
-    "required": ["title", "description", "tags", "narration", "scenes"],
+    "required": [
+        "title", "description", "tags", "narration",
+        "thumbnail_text", "thumbnail_visual_prompt", "scenes",
+    ],
 }
 
 
@@ -107,11 +113,11 @@ def generate_script(client, config, topic, structure):
 TOPIC: {topic}
 NICHE: {config['channel']['niche']}
 GUARDRAILS: {config['channel']['content_guardrails']}
-STRUCTURE STYLE: {structure} — {STRUCTURE_INSTRUCTIONS[structure]}
+STRUCTURE STYLE: {structure} -- {STRUCTURE_INSTRUCTIONS[structure]}
 
 Requirements:
 - {word_min}-{word_max} words of spoken narration.
-- Written to be read aloud naturally by TTS — short-to-medium sentences, no
+- Written to be read aloud naturally by TTS -- short-to-medium sentences, no
   bullet points, no headers within the narration text itself.
 - Factually accurate to publicly documented accounts of this incident.
 - End with the concrete lesson, procedural change, or engineering standard
@@ -119,12 +125,21 @@ Requirements:
 - Do NOT describe graphic injury/death detail. Focus on decisions, systems,
   timelines, and causes.
 - Avoid using double-quote characters inside the narration text (write
-  "he said the bridge was failing" instead of using quotation marks).
+  he said the bridge was failing instead of using quotation marks).
 
 Also produce a scene breakdown: split the narration into 12-16 scenes. For
 each scene give a short visual description suitable for an AI image
 generator (documentary-illustration style, no real people's likenesses, no
 graphic imagery).
+
+Also write:
+- thumbnail_text: 1-3 short punchy lines separated by a newline character,
+  for a YouTube thumbnail. ALL CAPS, each line under 20 characters, accurate
+  to the video (not misleading clickbait), e.g. "THE WARNING\\nTHEY IGNORED"
+- thumbnail_visual_prompt: one dramatic, high-contrast wide-shot visual
+  description for the thumbnail's background image -- more dramatic/striking
+  than the regular scene visuals, still documentary-illustration style, no
+  real people's likenesses, no graphic imagery
 """
     response = client.models.generate_content(
         model=config["script"]["model"],
