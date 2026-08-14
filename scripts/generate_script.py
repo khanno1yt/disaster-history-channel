@@ -132,14 +132,19 @@ each scene give a short visual description suitable for an AI image
 generator (documentary-illustration style, no real people's likenesses, no
 graphic imagery).
 
-Also write:
-- thumbnail_text: 1-3 short punchy lines separated by a newline character,
-  for a YouTube thumbnail. ALL CAPS, each line under 20 characters, accurate
-  to the video (not misleading clickbait), e.g. "THE WARNING\\nTHEY IGNORED"
-- thumbnail_visual_prompt: one dramatic, high-contrast wide-shot visual
-  description for the thumbnail's background image -- more dramatic/striking
-  than the regular scene visuals, still documentary-illustration style, no
-  real people's likenesses, no graphic imagery
+Also write, in the high-CTR style used by popular history-documentary
+YouTube channels (e.g. Mighty Monk, Fascinating Horror):
+- thumbnail_text: 1-2 short punchy lines separated by a newline character.
+  ALL CAPS, each line under 14 characters, as few words as possible while
+  staying accurate (not misleading clickbait) -- e.g. "IGNORED\\nWARNING"
+  or "167 DIED"
+- thumbnail_visual_prompt: one dramatic visual description centered on an
+  EXPRESSIVE ILLUSTRATED CHARACTER reacting to the unfolding disaster in
+  the moment (e.g. a technician staring in shock at a warning light, an
+  engineer looking up in horror at a failing structure) -- bold cinematic
+  digital-illustration style, strong directional lighting, high contrast.
+  NOT a real named person's likeness. No on-image text. No graphic injury
+  detail.
 """
     response = client.models.generate_content(
         model=config["script"]["model"],
