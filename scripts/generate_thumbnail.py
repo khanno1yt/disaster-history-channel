@@ -1,8 +1,12 @@
 """
-Generates a YouTube thumbnail (1280x720): a dramatic AI-generated background
-image via Pollinations, with short high-contrast text burned in via ffmpeg.
-No manual design work needed -- runs unattended alongside the rest of the
-pipeline.
+Generates a YouTube thumbnail (1280x720) in the "high-CTR history
+documentary" style used by channels like Mighty Monk, Fascinating Horror,
+etc: a dramatic illustrated character reacting to the moment as the visual
+focal point, with short bold text on a contrast bar so it stays readable
+against any background.
+
+Uses Pollinations.ai for the image (free, no key) and ffmpeg for the text
+treatment (drawbox + drawtext), so no extra paid tools are involved.
 """
 import json
 import os
@@ -68,7 +72,11 @@ def main():
     )
 
     style = config["visuals"]["style"]
-    full_prompt = f"{thumb_prompt}. Style: {style}. Dramatic wide shot, high contrast, cinematic."
+    full_prompt = (
+        f"{thumb_prompt}. Style: {style}. Bold cinematic digital-illustration, "
+        "dramatic directional lighting, high contrast, expressive character "
+        "reaction shot, no on-image text, no watermark."
+    )
     token = os.environ.get("POLLINATIONS_TOKEN")
     base_image = generate_base_image(full_prompt, token)
 
@@ -81,10 +89,19 @@ def main():
     try:
         font = find_font()
         text = escape_drawtext(thumb_text.upper())
+        n_lines = thumb_text.count("\n") + 1
+        bar_height = 130 + (n_lines - 1) * 90
+
         vf = (
+            # dark contrast bar across the top so text reads over any image
+            f"drawbox=x=0:y=0:w=iw:h={bar_height}:color=black@0.60:t=fill,"
+            # thin red accent line under the bar -- the "pop" color used
+            # across this genre of thumbnail
+            f"drawbox=x=0:y={bar_height}:w=iw:h=8:color=#e0201a@1.0:t=fill,"
+            # the headline text itself, bold white with a black outline
             f"drawtext=fontfile='{font}':text='{text}':"
-            "fontsize=80:fontcolor=white:borderw=6:bordercolor=black:"
-            "x=(w-text_w)/2:y=h-th-70:line_spacing=12"
+            f"fontsize=92:fontcolor=white:borderw=6:bordercolor=black:"
+            f"x=(w-text_w)/2:y=(({bar_height}-text_h)/2)-10:line_spacing=14"
         )
         cmd = [ffmpeg, "-y", "-i", str(base_path), "-vf", vf, "-q:v", "2", str(out_path)]
         result = subprocess.run(cmd, capture_output=True, text=True)
