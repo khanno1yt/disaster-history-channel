@@ -1,6 +1,5 @@
 {
   "queue": [
-    "Kansas City Hyatt Regency - how a single phone-call design change killed 114",
     "Boeing 737 MAX MCAS - how a software fix became two crashes",
     "Deepwater Horizon (2010) - the blowout preventer that didn't",
     "Fukushima Daiichi (2011) - the seawall height decision made decades earlier",
@@ -26,6 +25,7 @@
     "Bhopal Gas Tragedy (1984) - the chemical plant safety systems that failed",
     "Exxon Valdez oil spill (1989) - the navigation and fatigue failures behind it",
     "Union Carbide's MIC tank design flaws explained",
-    "Space Shuttle Columbia (2003) - the foam strike NASA dismissed"
+    "Space Shuttle Columbia (2003) - the foam strike NASA dismissed",
+    "Kansas City Hyatt Regency - how a single phone-call design change killed 114"
   ]
 }
