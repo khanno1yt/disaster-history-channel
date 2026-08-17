@@ -1,9 +1,23 @@
 {
   "queue": [
-    "The Halifax Explosion (1917) - two ships, one harbor, and a chain of miscommunication",
     "The Ronan Point collapse (1968) - a gas explosion that exposed a building design flaw",
     "The Kaprun funicular fire (2000) - a heater malfunction and a fatal design oversight",
-    "The Vajont Dam disaster (1963) - geologists who predicted the landslide and were ignored"
+    "The Vajont Dam disaster (1963) - geologists who predicted the landslide and were ignored",
+    "The Tay Bridge Disaster (1879) - a design under high winds that collapsed a bridge",
+    "The Great Molasses Flood (1919) - a storage tank rupture and an unstoppable wave",
+    "The Sinking of the SS General Slocum (1904) - a steamer fire and locked life preservers",
+    "The St. Francis Dam Collapse (1928) - a faulty foundation and a preventable flood",
+    "The Pemberton Mill Collapse (1860) - cast iron columns and a manufacturing tragedy",
+    "The Quebec Bridge Collapse (1907 and 1916) - engineering miscalculations and a record-breaking span",
+    "The SS Eastland Disaster (1915) - a passenger ship's stability issues and capsizing at dock",
+    "The Great Boston Fire (1872) - a city's reliance on wooden structures and limited water access",
+    "The Collier's Wood Tube Crash (1975) - a signaling error and a fatal subway collision",
+    "The Granville Rail Accident (1977) - a bridge strike and Australia's deadliest rail crash",
+    "The Phillips Petroleum Company explosion (1989) - a petrochemical plant and a series of errors",
+    "The Sampoong Department Store Collapse (1995) - illegal structural modifications and a building failure",
+    "The Piper Alpha disaster (1988) - a maintenance oversight and a devastating oil platform fire",
+    "The Hartford Circus Fire (1944) - paraffin waterproofing and a catastrophic tent blaze",
+    "The Kegworth Air Disaster (1989) - an engine failure and a critical pilot misdiagnosis"
   ],
   "used": [
     "Tenerife Airport Disaster (1977) - two 747s collide on the runway",
@@ -26,6 +40,7 @@
     "Fukushima Daiichi (2011) - the seawall height decision made decades earlier",
     "The Sultana steamboat explosion (1865) - America's deadliest maritime disaster",
     "The Johnstown Flood (1889) - a dam modification the owners were warned about",
-    "The Texas City disaster (1947) - ammonium nitrate and a fire nobody took seriously"
+    "The Texas City disaster (1947) - ammonium nitrate and a fire nobody took seriously",
+    "The Halifax Explosion (1917) - two ships, one harbor, and a chain of miscommunication"
   ]
 }
