@@ -1,6 +1,5 @@
 {
   "queue": [
-    "The Great Molasses Flood (1919) - a storage tank rupture and an unstoppable wave",
     "The Sinking of the SS General Slocum (1904) - a steamer fire and locked life preservers",
     "The St. Francis Dam Collapse (1928) - a faulty foundation and a preventable flood",
     "The Pemberton Mill Collapse (1860) - cast iron columns and a manufacturing tragedy",
@@ -41,6 +40,7 @@
     "The Ronan Point collapse (1968) - a gas explosion that exposed a building design flaw",
     "The Kaprun funicular fire (2000) - a heater malfunction and a fatal design oversight",
     "The Vajont Dam disaster (1963) - geologists who predicted the landslide and were ignored",
-    "The Tay Bridge Disaster (1879) - a design under high winds that collapsed a bridge"
+    "The Tay Bridge Disaster (1879) - a design under high winds that collapsed a bridge",
+    "The Great Molasses Flood (1919) - a storage tank rupture and an unstoppable wave"
   ]
 }
