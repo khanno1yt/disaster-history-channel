@@ -1,6 +1,5 @@
 {
   "queue": [
-    "The Great Boston Fire (1872) - a city's reliance on wooden structures and limited water access",
     "The Collier's Wood Tube Crash (1975) - a signaling error and a fatal subway collision",
     "The Granville Rail Accident (1977) - a bridge strike and Australia's deadliest rail crash",
     "The Phillips Petroleum Company explosion (1989) - a petrochemical plant and a series of errors",
@@ -41,6 +40,7 @@
     "The St. Francis Dam Collapse (1928) - a faulty foundation and a preventable flood",
     "The Pemberton Mill Collapse (1860) - cast iron columns and a manufacturing tragedy",
     "The Quebec Bridge Collapse (1907 and 1916) - engineering miscalculations and a record-breaking span",
-    "The SS Eastland Disaster (1915) - a passenger ship's stability issues and capsizing at dock"
+    "The SS Eastland Disaster (1915) - a passenger ship's stability issues and capsizing at dock",
+    "The Great Boston Fire (1872) - a city's reliance on wooden structures and limited water access"
   ]
 }
