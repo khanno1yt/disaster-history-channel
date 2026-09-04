@@ -1,6 +1,5 @@
 {
   "queue": [
-    "The Alexander L. Kielland disaster (1980) - a fatigue crack and the collapse of an offshore oil platform's leg",
     "The Mississippi River bridge collapse (2007) - gusset plate design flaw and a major highway bridge failure",
     "The Flixborough disaster (1974) - a temporary pipe modification and a massive chemical plant explosion",
     "The Willow Island disaster (1978) - scaffolding collapse during cooling tower construction",
@@ -71,6 +70,7 @@
     "The King's Cross fire (1987) - a burning escalator and a sudden flashover in a London Underground station",
     "The Ladbroke Grove rail crash (1999) - a signal passed at danger and a head-on train collision",
     "The LoCoch bridge collapse (1989) - a structural flaw and heavy rainfall leading to bridge failure",
-    "The Schoharie Creek Bridge collapse (1987) - scour erosion and a highway bridge falling into a river"
+    "The Schoharie Creek Bridge collapse (1987) - scour erosion and a highway bridge falling into a river",
+    "The Alexander L. Kielland disaster (1980) - a fatigue crack and the collapse of an offshore oil platform's leg"
   ]
 }
