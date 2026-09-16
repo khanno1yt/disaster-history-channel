@@ -1,6 +1,5 @@
 {
   "queue": [
-    "The Zeebrugge Ferry Disaster (1987) - a passenger ferry capsizing due to an open bow door and crew oversight",
     "The Alexander L. Kielland Platform Collapse (1980) - an oil rig's leg fatigue failure in the North Sea",
     "The Mississippi River Bridge Collapse (2007) - an interstate bridge failure caused by undersized gusset plates",
     "The Sinking of the SS Edmund Fitzgerald (1975) - a Great Lakes ore carrier lost in a severe storm, cause still debated but lessons learned",
@@ -86,6 +85,7 @@
     "The St. Francis Dam Collapse (1928) - a catastrophic dam failure due to a weak foundation and engineering oversight",
     "The New London School Explosion (1937) - a natural gas leak devastating a school due to lack of odorant",
     "The Texas City Disaster (1947) - an ammonium nitrate explosion in a port, triggering a chain of fires and blasts",
-    "The Flixborough Disaster (1974) - a temporary pipe modification leading to a devastating chemical plant explosion"
+    "The Flixborough Disaster (1974) - a temporary pipe modification leading to a devastating chemical plant explosion",
+    "The Zeebrugge Ferry Disaster (1987) - a passenger ferry capsizing due to an open bow door and crew oversight"
   ]
 }
