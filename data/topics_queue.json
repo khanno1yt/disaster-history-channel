@@ -1,9 +1,23 @@
 {
   "queue": [
-    "The Sampoong Department Store Collapse (1995) - a building failure in Seoul due to illegal structural modifications and overload",
     "The Summerland Disaster (1973) - a leisure center fire exacerbated by inadequate fire exits and combustible materials",
     "The Iroquois Theater Fire (1903) - a Chicago theater blaze with mass casualties due to locked exits and a lack of safety features",
-    "The Ashtabula River Railroad Disaster (1876) - a cast iron bridge failure in extreme cold leading to a train plunge"
+    "The Ashtabula River Railroad Disaster (1876) - a cast iron bridge failure in extreme cold leading to a train plunge",
+    "The Quebec Bridge Collapse (1907) - engineering miscalculations and a record-breaking span",
+    "The Great Molasses Flood (1919) - a storage tank rupture and an unstoppable wave",
+    "The Sinking of the SS General Slocum (1904) - a steamer fire and locked life preservers",
+    "The St. Francis Dam Collapse (1928) - a faulty foundation and a preventable flood",
+    "The Pemberton Mill Collapse (1860) - cast iron columns and a manufacturing tragedy",
+    "The SS Eastland Disaster (1915) - a passenger ship's stability issues and capsizing at dock",
+    "The Great Boston Fire (1872) - a city's reliance on wooden structures and limited water access",
+    "The Collier's Wood Tube Crash (1975) - a signaling error and a fatal subway collision",
+    "The Granville Rail Accident (1977) - a bridge strike and Australia's deadliest rail crash",
+    "The Phillips Petroleum Company explosion (1989) - a petrochemical plant and a series of errors",
+    "The Hartford Circus Fire (1944) - paraffin waterproofing and a catastrophic tent blaze",
+    "The Kegworth Air Disaster (1989) - an engine failure and a critical pilot misdiagnosis",
+    "The Byford Dolphin accident (1983) - a rapid decompression event during deep-sea diving",
+    "The Zeebrugge Disaster (1987) - a ferry sailing with its bow door open",
+    "The Alexander L. Kielland disaster (1980) - a fatigue crack and the collapse of an offshore oil platform's leg"
   ],
   "used": [
     "Tenerife Airport Disaster (1977) - two 747s collide on the runway",
@@ -86,6 +100,7 @@
     "The Zeebrugge Ferry Disaster (1987) - a passenger ferry capsizing due to an open bow door and crew oversight",
     "The Alexander L. Kielland Platform Collapse (1980) - an oil rig's leg fatigue failure in the North Sea",
     "The Mississippi River Bridge Collapse (2007) - an interstate bridge failure caused by undersized gusset plates",
-    "The Sinking of the SS Edmund Fitzgerald (1975) - a Great Lakes ore carrier lost in a severe storm, cause still debated but lessons learned"
+    "The Sinking of the SS Edmund Fitzgerald (1975) - a Great Lakes ore carrier lost in a severe storm, cause still debated but lessons learned",
+    "The Sampoong Department Store Collapse (1995) - a building failure in Seoul due to illegal structural modifications and overload"
   ]
 }
