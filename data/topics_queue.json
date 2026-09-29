@@ -1,6 +1,5 @@
 {
   "queue": [
-    "The Seattle Earthquake (2001) - the Nisqually quake and its impact on infrastructure design",
     "The Great Blizzard of 1888 - a massive snowstorm exposing vulnerabilities in urban infrastructure",
     "The London Smog (1952) - a deadly air pollution event leading to modern environmental regulations",
     "The Sampoong Department Store Collapse (1995) - illegal structural modifications and a building failure in Seoul",
@@ -116,6 +115,7 @@
     "The Zeebrugge Disaster (1987) - a ferry sailing with its bow door open",
     "The Alexander L. Kielland disaster (1980) - a fatigue crack and the collapse of an offshore oil platform's leg",
     "The Motherwell Bridge Collapse (1928) - a poorly constructed temporary support and a new railway bridge's failure",
-    "The Chelyabinsk Meteor (2013) - an unexpected airburst and the resulting shockwave damage"
+    "The Chelyabinsk Meteor (2013) - an unexpected airburst and the resulting shockwave damage",
+    "The Seattle Earthquake (2001) - the Nisqually quake and its impact on infrastructure design"
   ]
 }
