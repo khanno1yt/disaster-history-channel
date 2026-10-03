@@ -1,9 +1,23 @@
 {
   "queue": [
-    "The Mount Vision Train Wreck (1993) - a broken rail and a catastrophic freight train derailment",
     "The King's Cross Fire (1987) - a burning escalator and a sudden flashover in a London Underground station",
     "The Ladbroke Grove Rail Crash (1999) - a signal passed at danger and a head-on train collision",
-    "The LoCoch Bridge Collapse (1989) - a structural flaw and heavy rainfall leading to bridge failure"
+    "The LoCoch Bridge Collapse (1989) - a structural flaw and heavy rainfall leading to bridge failure",
+    "The Monongah Mine Disaster (1907) - a coal dust explosion and a lack of safety regulations",
+    "The Hartford Circus Fire (1944) - paraffin waterproofing and a catastrophic tent blaze",
+    "The Brooklyn Theatre Fire (1876) - inadequate exits and a tragic theater inferno",
+    "The Great Flood of 1993 - levee failures and the Mississippi River's destructive power",
+    "The Sunshine Mine Disaster (1972) - an underground fire and a flawed ventilation system",
+    "The collapse of the Quebec Bridge (1907) - engineering miscalculations and a record-breaking span",
+    "The SS Eastland Disaster (1915) - a passenger ship's stability issues and capsizing at dock",
+    "The Sinking of the SS Andrea Doria (1956) - radar limitations and a collision at sea",
+    "The Cleveland East Ohio Gas Explosion (1944) - a natural gas tank failure and a massive urban explosion",
+    "The D-Deck Fire on the SS Morro Castle (1934) - a luxury liner blaze and questions of arson and negligence",
+    "The collapse of the Willow Island cooling tower (1978) - scaffolding failure during construction",
+    "The New London School explosion (1937) - an odorless gas leak devastates a school",
+    "The Sampoong Department Store collapse (1995) - illegal structural modifications and a building failure in Seoul",
+    "The Summerland disaster (1973) - a leisure center fire due to inadequate fire exits and combustible materials",
+    "The Iroquois Theater Fire (1903) - locked exits and a theater fire with massive casualties"
   ],
   "used": [
     "Tenerife Airport Disaster (1977) - two 747s collide on the runway",
@@ -116,6 +130,7 @@
     "The Iroquois Theater Fire (1903) - locked exits and a theater fire with massive casualties",
     "The Ashtabula River Railroad Disaster (1876) - a cast iron bridge failure in extreme cold",
     "The Sinking of the MS Estonia (1994) - a ferry's bow visor failure in a storm",
-    "The Seveso Disaster (1976) - an uncontrolled chemical release from a manufacturing plant"
+    "The Seveso Disaster (1976) - an uncontrolled chemical release from a manufacturing plant",
+    "The Mount Vision Train Wreck (1993) - a broken rail and a catastrophic freight train derailment"
   ]
 }
