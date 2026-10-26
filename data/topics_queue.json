@@ -1,9 +1,23 @@
 {
   "queue": [
-    "The Sinking of the Wahine (1968) - a roll-on/roll-off ferry capsizing in Wellington Harbour during a severe storm",
     "The Battersea Park Funfair Disaster (1972) - a roller coaster mechanical failure and inadequate safety inspections",
     "The Chernobyl liquidators (1986) - the human cost and engineering challenges of containing a nuclear catastrophe",
-    "The Sinking of the Bismarck (1941) - rudder damage and a naval engineering vulnerability that sealed a battleship's fate"
+    "The Sinking of the Bismarck (1941) - rudder damage and a naval engineering vulnerability that sealed a battleship's fate",
+    "The Great Chicago Fire (1871) - an inferno that reshaped urban planning and fire safety",
+    "The Zeebrugge Ferry Disaster (1987) - a passenger ferry capsizing due to an open bow door and crew oversight",
+    "The Alexander L. Kielland Platform Collapse (1980) - an oil rig's leg fatigue failure in the North Sea",
+    "The Mississippi River Bridge Collapse (2007) - an interstate bridge failure caused by undersized gusset plates",
+    "The Sinking of the SS Edmund Fitzgerald (1975) - a Great Lakes ore carrier lost in a severe storm, cause still debated but lessons learned",
+    "The Motherwell Bridge Collapse (1928) - a poorly constructed temporary support and a new railway bridge's failure",
+    "The Chelyabinsk Meteor (2013) - an unexpected airburst and the resulting shockwave damage",
+    "The Seattle Earthquake (2001) - the Nisqually quake and its impact on infrastructure design",
+    "The Great Blizzard of 1888 - a massive snowstorm exposing vulnerabilities in urban infrastructure",
+    "The London Smog (1952) - a deadly air pollution event leading to modern environmental regulations",
+    "The Monongah Mine Disaster (1907) - a coal dust explosion and a lack of safety regulations",
+    "The Brooklyn Theatre Fire (1876) - inadequate exits and a tragic theater inferno",
+    "The Great Flood of 1993 - levee failures and the Mississippi River's destructive power",
+    "The Sunshine Mine Disaster (1972) - an underground fire and a flawed ventilation system",
+    "The Sinking of the SS Andrea Doria (1956) - radar limitations and a collision at sea"
   ],
   "used": [
     "Tenerife Airport Disaster (1977) - two 747s collide on the runway",
@@ -161,6 +175,7 @@
     "The San Juanico disaster (1984) - a series of massive liquid petroleum gas explosions in a crowded area",
     "The collapse of the Schoharie Creek Bridge (1987) - scour erosion of bridge piers during a flood",
     "The explosion of the SS Grandcamp (1947) - the Texas City disaster's initiating event, ammonium nitrate and a dockside fire",
-    "The collapse of the Kemper Arena roof (1979) - a design flaw in a bolted connection leading to a major roof collapse"
+    "The collapse of the Kemper Arena roof (1979) - a design flaw in a bolted connection leading to a major roof collapse",
+    "The Sinking of the Wahine (1968) - a roll-on/roll-off ferry capsizing in Wellington Harbour during a severe storm"
   ]
 }
