@@ -1,6 +1,5 @@
 {
   "queue": [
-    "The Battersea Park Funfair Disaster (1972) - a roller coaster mechanical failure and inadequate safety inspections",
     "The Chernobyl liquidators (1986) - the human cost and engineering challenges of containing a nuclear catastrophe",
     "The Sinking of the Bismarck (1941) - rudder damage and a naval engineering vulnerability that sealed a battleship's fate",
     "The Great Chicago Fire (1871) - an inferno that reshaped urban planning and fire safety",
@@ -176,6 +175,7 @@
     "The collapse of the Schoharie Creek Bridge (1987) - scour erosion of bridge piers during a flood",
     "The explosion of the SS Grandcamp (1947) - the Texas City disaster's initiating event, ammonium nitrate and a dockside fire",
     "The collapse of the Kemper Arena roof (1979) - a design flaw in a bolted connection leading to a major roof collapse",
-    "The Sinking of the Wahine (1968) - a roll-on/roll-off ferry capsizing in Wellington Harbour during a severe storm"
+    "The Sinking of the Wahine (1968) - a roll-on/roll-off ferry capsizing in Wellington Harbour during a severe storm",
+    "The Battersea Park Funfair Disaster (1972) - a roller coaster mechanical failure and inadequate safety inspections"
   ]
 }
