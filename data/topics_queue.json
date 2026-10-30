@@ -1,6 +1,5 @@
 {
   "queue": [
-    "The Sinking of the SS Edmund Fitzgerald (1975) - a Great Lakes ore carrier lost in a severe storm, cause still debated but lessons learned",
     "The Motherwell Bridge Collapse (1928) - a poorly constructed temporary support and a new railway bridge's failure",
     "The Chelyabinsk Meteor (2013) - an unexpected airburst and the resulting shockwave damage",
     "The Seattle Earthquake (2001) - the Nisqually quake and its impact on infrastructure design",
@@ -176,6 +175,7 @@
     "The Great Chicago Fire (1871) - an inferno that reshaped urban planning and fire safety",
     "The Zeebrugge Ferry Disaster (1987) - a passenger ferry capsizing due to an open bow door and crew oversight",
     "The Alexander L. Kielland Platform Collapse (1980) - an oil rig's leg fatigue failure in the North Sea",
-    "The Mississippi River Bridge Collapse (2007) - an interstate bridge failure caused by undersized gusset plates"
+    "The Mississippi River Bridge Collapse (2007) - an interstate bridge failure caused by undersized gusset plates",
+    "The Sinking of the SS Edmund Fitzgerald (1975) - a Great Lakes ore carrier lost in a severe storm, cause still debated but lessons learned"
   ]
 }
