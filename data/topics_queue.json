@@ -1,9 +1,23 @@
 {
   "queue": [
-    "The Brooklyn Theatre Fire (1876) - inadequate exits and a tragic theater inferno",
     "The Great Flood of 1993 - levee failures and the Mississippi River's destructive power",
     "The Sunshine Mine Disaster (1972) - an underground fire and a flawed ventilation system",
-    "The Sinking of the SS Andrea Doria (1956) - radar limitations and a collision at sea"
+    "The Sinking of the SS Andrea Doria (1956) - radar limitations and a collision at sea",
+    "The Great Fire of London (1666) - urban planning failures leading to widespread destruction",
+    "The collapse of the Tay Bridge (1879) - a design under high winds that collapsed a bridge",
+    "The Monongah Mine Disaster (1907) - a coal dust explosion and a lack of safety regulations",
+    "The SS Eastland Disaster (1915) - a passenger ship's stability issues and capsizing at dock",
+    "The Great Molasses Flood (1919) - a storage tank rupture and an unstoppable wave",
+    "The St. Francis Dam Collapse (1928) - a faulty foundation and a preventable flood",
+    "The New London School Explosion (1937) - an odorless gas leak devastates a school",
+    "The Texas City Disaster (1947) - ammonium nitrate and a fire nobody took seriously",
+    "The Comet Air Disasters (1950s) - metal fatigue and square windows leading to de Havilland Comet crashes",
+    "The Minamata Disaster (1956) - industrial mercury poisoning and the long-term health and environmental consequences",
+    "The Vajont Dam Disaster (1963) - geologists who predicted the landslide and were ignored",
+    "The Ronan Point Collapse (1968) - a gas explosion that exposed a building design flaw",
+    "The Flixborough Disaster (1974) - a temporary pipe modification and a massive chemical plant explosion",
+    "The Alexander L. Kielland Disaster (1980) - a fatigue crack and the collapse of an offshore oil platform's leg",
+    "The Zeebrugge Ferry Disaster (1987) - a ferry sailing with its bow door open"
   ],
   "used": [
     "Tenerife Airport Disaster (1977) - two 747s collide on the runway",
@@ -176,6 +190,7 @@
     "The Seattle Earthquake (2001) - the Nisqually quake and its impact on infrastructure design",
     "The Great Blizzard of 1888 - a massive snowstorm exposing vulnerabilities in urban infrastructure",
     "The London Smog (1952) - a deadly air pollution event leading to modern environmental regulations",
-    "The Monongah Mine Disaster (1907) - a coal dust explosion and a lack of safety regulations"
+    "The Monongah Mine Disaster (1907) - a coal dust explosion and a lack of safety regulations",
+    "The Brooklyn Theatre Fire (1876) - inadequate exits and a tragic theater inferno"
   ]
 }
